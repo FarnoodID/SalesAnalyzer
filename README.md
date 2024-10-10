@@ -26,7 +26,7 @@ The primary objective of SalesAnalyzer is to analyze sales data for different pr
 ### Installation Steps
 1. **Clone the Repository**:
      ```bash
-     git clone https://github.com/yourusername/SalesAnalyzer.git
+     git clone https://github.com/FarnoodID/SalesAnalyzer.git
      cd SalesAnalyzer
      ```
 2. **Set Up Database**:
