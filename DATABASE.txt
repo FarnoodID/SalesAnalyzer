@@ -1,0 +1,17 @@
+sudo -u postgres psql
+
+CREATE DATABASE fpdb;
+
+\c fpdb
+
+CREATE TABLE fp_stores_data(time varchar(50), province varchar(50), city varchar(50), market_id varchar(50), product_id varchar(50), price int, quantity int, has_sold int);
+
+CREATE TABLE fp_city_aggregation(city varchar(50), time varchar(50), quantity int, has_sold int, price_avg int);
+
+CREATE TABLE fp_store_aggregation(market_id varchar(50), has_sold int, earned bigint);
+
+GRANT ALL PRIVILEGES ON TABLE fp_stores_data TO farnood;
+
+GRANT ALL PRIVILEGES ON TABLE fp_city_aggregation TO farnood;
+
+GRANT ALL PRIVILEGES ON TABLE fp_store_aggregation TO farnood;
